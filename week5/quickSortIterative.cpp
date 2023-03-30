@@ -59,7 +59,9 @@ void quickSortIterative(int arr[], int n) {
 
 int main()
 {
-    int Size=70000;
+    cout<<"Enter the size of the array below with no spaces, Since time is in MiliSeconds enter a large number"<<endl;
+    int Size;
+    cin>> Size;
 
     int arr_itr[Size]={};
 
@@ -72,9 +74,9 @@ int main()
     quickSortIterative(arr_itr,Size);
     auto end_time_itr = high_resolution_clock::now();
 
-    for(int i=0;i<Size;i++){
+    /*for(int i=0;i<Size;i++){
         cout<<arr_itr[i]<<" ";
-    }
+    }*/
     auto duration_itr = chrono::duration_cast<chrono::milliseconds>(end_time_itr - start_time_itr).count();
 
     cout << "\nExecution time in Iterative: " << duration_itr<< " MiliSeconds" << endl;

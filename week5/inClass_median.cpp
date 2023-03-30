@@ -29,6 +29,8 @@ double getMedian(vector<int> vec){
 }
 
 int main() {
+    cout<<"Enter the input array seperated with spaces"<<endl;
+    
     vector<int> input;
     int x;
 

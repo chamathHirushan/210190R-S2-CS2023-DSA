@@ -39,7 +39,9 @@ void quickSortRecursive(int A[], int p, int r)
 
 int main()
 {
-    int Size=70000;//change size from here
+    cout<<"Enter the size of the array below with no spaces, Since time is in MiliSeconds enter a large number"<<endl;
+    int Size;
+    cin>> Size;
 
     int arr_rec[Size]={};
 
@@ -52,9 +54,9 @@ int main()
     quickSortRecursive(arr_rec,0,Size-1);
     auto end_time_rec = high_resolution_clock::now();
 
-    for(int i=0;i<Size;i++){
+    /*for(int i=0;i<Size;i++){
         cout<<arr_rec[i]<<" ";
-    }
+    }*/
     auto duration_rec = chrono::duration_cast<chrono::milliseconds>(end_time_rec - start_time_rec).count();
 
     cout << "\nExecution time in Iterative: " << duration_rec<< " MiliSeconds" << endl;

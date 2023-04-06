@@ -46,7 +46,7 @@ class stack {
         int pop(){
             if (isEmpty()){
                 cout << "Stack Underflow" << endl;
-                return -1; //indicating underflow error
+                return -1; //indicating error
             }else{
                 top--;
                 return arr[top+1];
